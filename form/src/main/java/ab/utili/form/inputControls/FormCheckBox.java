@@ -4,17 +4,14 @@ import android.content.Context;
 import android.content.res.TypedArray;
 import android.util.AttributeSet;
 import android.widget.CompoundButton;
-
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.lifecycle.LiveData;
-
-import com.tihi.formlibrary.R;
-import com.tihi.formlibrary.forms.BasicFormItem;
-import com.tihi.formlibrary.forms.LeafFormItem;
-
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
+import ab.utili.form.R;
+import ab.utili.form.forms.BasicFormItem;
+import ab.utili.form.forms.LeafFormItem;
 
 public class FormCheckBox extends androidx.appcompat.widget.AppCompatCheckBox implements LeafFormItem<Boolean> {
     private BasicFormItem<Boolean> formCheckBox;

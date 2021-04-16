@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">FormLibrary</string>
+    <string name="NonEmptyStringValidator">ab.utili.form.validators.NonEmptyStringValidator</string>
+    <string name="RadioGroupItemSelectedValidator">ab.utili.form.validators.RadioGroupValueSelectedValidator</string>
+    <string name="NonEmptyDateValidator">ab.utili.form.validators.NonEmptyDateValidator</string>
+    <string name="BooleanValidator">ab.utili.form.validators.BooleanValidator</string>
+
+</resources>

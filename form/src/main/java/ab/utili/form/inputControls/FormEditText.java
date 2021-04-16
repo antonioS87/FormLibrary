@@ -5,18 +5,15 @@ import android.content.res.TypedArray;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.AttributeSet;
-
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.AppCompatEditText;
 import androidx.lifecycle.LiveData;
-
-import com.tihi.formlibrary.R;
-import com.tihi.formlibrary.forms.BasicFormItem;
-import com.tihi.formlibrary.forms.LeafFormItem;
-
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
+import ab.utili.form.R;
+import ab.utili.form.forms.BasicFormItem;
+import ab.utili.form.forms.LeafFormItem;
 
 public class FormEditText extends AppCompatEditText implements LeafFormItem<String> {
     private BasicFormItem<String> formEditText;

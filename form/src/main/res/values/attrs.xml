@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="LeafFormItem">
+        <attr name="isRequired" format="boolean"/>
+        <attr name="validator" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="FormRadioGroup" parent = "LeafFormItem">
+        <attr name="isRequired"/>
+        <attr name="validator"/>
+    </declare-styleable>
+
+    <declare-styleable name="FormCheckBox" parent = "LeafFormItem">
+        <attr name="isRequired"/>
+        <attr name="validator"/>
+    </declare-styleable>
+
+    <declare-styleable name="FormEditText" parent = "LeafFormItem">
+        <attr name="isRequired"/>
+        <attr name="validator"/>
+    </declare-styleable>
+
+    <declare-styleable name="FormDatePickerTextView" parent = "LeafFormItem">
+        <attr name="isRequired"/>
+        <attr name="validator"/>
+        <attr name="datePattern" format="string"/>
+        <attr name="dateBefore" format="reference"/>
+        <attr name="dateAfter" format="reference"/>
+    </declare-styleable>
+
+</resources>

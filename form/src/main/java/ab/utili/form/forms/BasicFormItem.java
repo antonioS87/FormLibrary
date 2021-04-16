@@ -3,7 +3,6 @@ package ab.utili.form.forms;
 import androidx.annotation.Nullable;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
-
 import java.security.InvalidParameterException;
 
 public class BasicFormItem<VALUE> implements LeafFormItem<VALUE>{

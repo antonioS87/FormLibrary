@@ -1,6 +1,6 @@
 package ab.utili.form.validators;
 
-import com.tihi.formlibrary.forms.LeafFormItem;
+import ab.utili.form.forms.LeafFormItem;
 
 public class NonEmptyStringValidator implements LeafFormItem.ItemValidator<String> {
 

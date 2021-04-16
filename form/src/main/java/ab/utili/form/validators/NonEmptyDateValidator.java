@@ -1,8 +1,7 @@
 package ab.utili.form.validators;
 
-import com.tihi.formlibrary.forms.LeafFormItem;
-
 import java.util.Date;
+import ab.utili.form.forms.LeafFormItem;
 
 public class NonEmptyDateValidator implements LeafFormItem.ItemValidator<Date> {
 
