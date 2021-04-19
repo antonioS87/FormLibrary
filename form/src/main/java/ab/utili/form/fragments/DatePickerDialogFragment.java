@@ -14,9 +14,7 @@ public  class DatePickerDialogFragment extends DialogFragment {
 
     private Date minDate, maxDate, currentDate;
 
-    public DatePickerDialogFragment(DatePickerDialog.OnDateSetListener onDateSetListener){
-        this.onDateSetListener = onDateSetListener;
-
+    public DatePickerDialogFragment(){
     }
 
     @Override
@@ -39,7 +37,12 @@ public  class DatePickerDialogFragment extends DialogFragment {
         if(maxDate != null){
             datePickerDialog.getDatePicker().setMaxDate(maxDate.getTime());
         }
+
         return datePickerDialog;
+    }
+
+    public void setOnDateSetListener(DatePickerDialog.OnDateSetListener onDateSetListener){
+        this.onDateSetListener = onDateSetListener;
     }
 
     public void setMinDate(Date minDate){

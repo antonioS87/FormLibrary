@@ -74,8 +74,16 @@ public class FormDatePickerTextView extends androidx.appcompat.widget.AppCompatT
             array.recycle();
         }
 
+        if(context instanceof AppCompatActivity){
+            FragmentManager fragmentManager = ((AppCompatActivity)(AppCompatActivity) context).getSupportFragmentManager();
+            datePickerFragment = (DatePickerDialogFragment) fragmentManager.findFragmentByTag(Integer.toString(getId()));
+        }
+
+        if(datePickerFragment == null){
+            datePickerFragment = new DatePickerDialogFragment();
+        }
         formDatePickerTv = new BasicFormItem<>(isRequired, itemValidator);
-        datePickerFragment = new DatePickerDialogFragment(FormDatePickerTextView.this);
+        datePickerFragment.setOnDateSetListener(this);
 
         this.setOnClickListener(new OnClickListener() {
             @Override
@@ -107,7 +115,8 @@ public class FormDatePickerTextView extends androidx.appcompat.widget.AppCompatT
 
                 if(view.getContext() instanceof AppCompatActivity){
                     FragmentManager fragmentManager = ((AppCompatActivity)(AppCompatActivity) view.getContext()).getSupportFragmentManager();
-                    datePickerFragment.show(fragmentManager, "datePickerFragment");
+                    String tag = Integer.toString(getId());
+                    datePickerFragment.show(fragmentManager, tag);
                 }
             }
         });
@@ -162,4 +171,5 @@ public class FormDatePickerTextView extends androidx.appcompat.widget.AppCompatT
     public LiveData<ItemStatus> getItemStatus() {
         return formDatePickerTv.getItemStatus();
     }
+
 }
