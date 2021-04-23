@@ -3,6 +3,8 @@
     <string name="NonEmptyStringValidator">ab.utili.form.validators.NonEmptyStringValidator</string>
     <string name="RadioGroupItemSelectedValidator">ab.utili.form.validators.RadioGroupValueSelectedValidator</string>
     <string name="NonEmptyDateValidator">ab.utili.form.validators.NonEmptyDateValidator</string>
-    <string name="BooleanValidator">ab.utili.form.validators.BooleanValidator</string>
+    <string name="CheckBoxValidator">ab.utili.form.validators.CheckBoxValidator</string>
+    <string name="FormRadioGroupValidator">ab.utili.form.validators.FormRadioGroupValidator</string>
+    <string name="IsEmailValidator">ab.utili.form.validators.IsEmailValidator</string>
 
 </resources>
