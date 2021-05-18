@@ -16,8 +16,8 @@ The library includes the following views:
 
 The intention of the library is to simplify the creation of forms following a couple of simple steps:
 
-1. Add all form elements to one of the containers (_ConstraintLayout, FrameLayout..._)
-2. Create an instance of the _BasicForm_ in the Activity and provide it with the container containing the form elements
+1. Add all form elements to one of the containers (_ConstraintLayout, FrameLayout..._);
+2. Create an instance of the _BasicForm_ in the Activity and call its *loadFormItemsFromLayout(ViewGroup vg)* method to load the form items;
 3. Observe the form status in parent activity
 
 
