@@ -254,6 +254,8 @@ The form elements are loaded into form using the BasicForm's *loadFormItemsFromL
 
 In the above example, the constraint layout with the id *new_user_form_container* holds all form elements.
 
+## 3. Observing form status
+    
 All that is left to do after that is observer the form and respond to its status changes:
 
 ```java
