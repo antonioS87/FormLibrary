@@ -11,7 +11,6 @@ public class ItemValidators {
                 return !s.isEmpty();
             }
         };
-
     }
 
     public static LeafFormItem.ItemValidator<String> getResidencyValidator() {

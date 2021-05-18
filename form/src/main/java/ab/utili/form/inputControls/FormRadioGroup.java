@@ -7,10 +7,8 @@ import android.widget.RadioGroup;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.lifecycle.LiveData;
-
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
-
 import ab.utili.form.R;
 import ab.utili.form.forms.BasicFormItem;
 import ab.utili.form.forms.LeafFormItem;
@@ -57,7 +55,6 @@ public class FormRadioGroup extends RadioGroup implements LeafFormItem<Integer> 
         } finally {
             array.recycle();
         }
-
 
         formRadioGroup = new BasicFormItem<Integer>(isRequired, itemValidator);
 

@@ -6,5 +6,4 @@
     <string name="CheckBoxValidator">ab.utili.form.validators.CheckBoxValidator</string>
     <string name="FormRadioGroupValidator">ab.utili.form.validators.FormRadioGroupValidator</string>
     <string name="IsEmailValidator">ab.utili.form.validators.IsEmailValidator</string>
-
 </resources>

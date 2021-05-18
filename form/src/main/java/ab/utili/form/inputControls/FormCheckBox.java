@@ -21,7 +21,6 @@ public class FormCheckBox extends androidx.appcompat.widget.AppCompatCheckBox im
         init(context, attrs);
     }
 
-
     public void init(Context context, @Nullable AttributeSet attrs){
         boolean isRequired = false;
         int validatorClassNameRef;
@@ -41,7 +40,6 @@ public class FormCheckBox extends androidx.appcompat.widget.AppCompatCheckBox im
                 Constructor<?> constructor = validatorClass.getConstructor();
                 itemValidator = (LeafFormItem.ItemValidator<Boolean>) constructor.newInstance();
             }
-
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         } catch (NoSuchMethodException e) {
@@ -65,7 +63,6 @@ public class FormCheckBox extends androidx.appcompat.widget.AppCompatCheckBox im
                 formCheckBox.setValue(b);
             }
         });
-
     }
 
     @Override

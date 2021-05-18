@@ -59,7 +59,6 @@ public class FormDatePickerTextView extends androidx.appcompat.widget.AppCompatT
                 Constructor<?> constructor = validatorClass.getConstructor();
                 itemValidator = (LeafFormItem.ItemValidator<Date>) constructor.newInstance();
             }
-
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         } catch (NoSuchMethodException e) {

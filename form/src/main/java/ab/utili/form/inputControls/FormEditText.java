@@ -22,12 +22,10 @@ public class FormEditText extends AppCompatEditText implements LeafFormItem<Stri
         super(context);
     }
 
-
     public FormEditText(@NonNull Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
         init(context, attrs);
     }
-
 
     public FormEditText(@NonNull Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
@@ -51,8 +49,6 @@ public class FormEditText extends AppCompatEditText implements LeafFormItem<Stri
                 Constructor<?> constructor = validatorClass.getConstructor();
                 itemValidator = (ItemValidator<String>) constructor.newInstance();
             }
-
-
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         } catch (NoSuchMethodException e) {
@@ -66,7 +62,6 @@ public class FormEditText extends AppCompatEditText implements LeafFormItem<Stri
         } finally {
             array.recycle();
         }
-
 
         formEditText = new BasicFormItem<>(isRequired, itemValidator);
 
@@ -87,7 +82,6 @@ public class FormEditText extends AppCompatEditText implements LeafFormItem<Stri
             }
         });
     }
-
 
     public void setRequired(boolean isRequired, @Nullable ItemValidator<String> itemValidator){
         formEditText.setRequired(isRequired, itemValidator);
@@ -113,8 +107,6 @@ public class FormEditText extends AppCompatEditText implements LeafFormItem<Stri
         formEditText.setFormItemValidator(itemValidator);
         return this;
     }
-
-
 
     @Override
     public Boolean isRequired() {

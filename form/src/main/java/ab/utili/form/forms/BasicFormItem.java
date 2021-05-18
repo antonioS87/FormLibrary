@@ -31,8 +31,6 @@ public class BasicFormItem<VALUE> implements LeafFormItem<VALUE>{
         }
     }
 
-
-
     public void setValue(VALUE value){
         this.value = value;
         if(isValueValid()){

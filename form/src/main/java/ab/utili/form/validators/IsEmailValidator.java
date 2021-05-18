@@ -1,7 +1,6 @@
 package ab.utili.form.validators;
 
 import android.text.TextUtils;
-
 import ab.utili.form.forms.LeafFormItem;
 
 public class IsEmailValidator implements LeafFormItem.ItemValidator<String> {
