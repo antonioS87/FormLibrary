@@ -1,7 +1,13 @@
 # FormLibrary
 ## _Simple android Form Library_
 
-The FromLibrary simplifies the process of building custom forms in android. The library includes the following views:
+The FromLibrary simplifies the process of building custom forms in android. The idea is to extend the standard android user input classes (EditText, CheckBox...) with the goal of adding the following functionality:
+
+- ability to define input validator through xml parameters. The input validator will be used to validate the user input.
+- the ability to combine all of the input into a form which will have two states, valid if all form items are valid or invalid otherwise.
+
+
+The library includes the following views:
 
 - FormCheckBox
 - FormDatePickerTextView
@@ -67,7 +73,14 @@ The FormDatePickerTextView is used to pick date by tapping on regular text view,
 
 
 ## 1. Adding elements to the container
-To build a simple form, add elements to one of the ViewGroup containers. Here is an example of a simple form:
+To build a simple form, add elements to one of the ViewGroup containers. A simple form is given in *Figure_01*.
+
+<center>
+<p>
+<img src="./rdm_pics/form_lib_example.png" height="300">
+</p>
+*Figure_01 - Simple form*
+</center>
 
 <details>
   <summary><b>Click to view the xml layout!</b></summary>
